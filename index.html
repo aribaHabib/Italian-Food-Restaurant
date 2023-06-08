@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -22,7 +23,7 @@
   <body>
     <div class="rootElement">
       <div class="container-fluid" id="part-1">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md" data-aos="fade-down">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -107,7 +108,9 @@
           </p>
           <br />
         </div>
-        <div class="flexbox-container">
+        <div class="flexbox-container" 
+        data-aos-easing="linear"
+        data-aos-duration="1500" data-aos="zoom-in">
           <div class="flexbox-items flexbox-item-3">
             <!-- here is where they add the ICON -->
             <img
@@ -157,7 +160,7 @@
 
       <div class="container-fluid" id="part-3">
         <h1>Lorem Ipsum Dolor</h1>
-        <div class="flexbox-container">
+        <div class="flexbox-container" data-aos="fade-down">
           <div class="flexbox-item flexbox-item-6">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -182,10 +185,10 @@
 
       <div class="container-fluid" id="part-4">
         <div class="flexbox-container">
-          <div class="flexbox-item flexbox-item1">
+          <div class="flexbox-item flexbox-item1" data-aos="fade-right">
             <img src="./Images/pasta-4.png" style="filter:drop-shadow(8px 8px 5px gray);"/>
           </div>
-          <div class="flexbox-item flexbox-item-8">
+          <div class="flexbox-item flexbox-item-8" data-aos="fade-left">
             <h2>Discount up to<br />50% All Excursions</h2>
             <br />
             <p>
@@ -197,7 +200,7 @@
           </div>
         </div>
         <div class="flexbox-container" id="wrap">
-          <div class="flexbox-item flexbox-item-9">
+          <div class="flexbox-item flexbox-item-9" data-aos="fade-right">
             <h2>January's Promo:<br />Buy 1 Get 1 Free!</h2>
             <br />
             <p>
@@ -207,7 +210,7 @@
             </p>
             <button class="button-2" type="button" href="#">READ MORE</button>
           </div>
-          <div class="flexbox-item flexbox-item2">
+          <div class="flexbox-item flexbox-item2" data-aos="fade-left">
             <img src="./Images/pasta-3.png" width="300px" style="filter:drop-shadow(8px 8px 5px gray);"/>
           </div>
         </div>
@@ -222,7 +225,8 @@
               iusmod tempor incididunt ut Labore et dolor magna.
             </p>
           </div>
-          <div>
+          <div data-aos="flip-right" data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
             <img src="./Images/pizza.png" alt="" class="pizza" style="filter: drop-shadow(8px 8px 5px black);"/>
           </div>
         </div>
@@ -260,7 +264,8 @@
         </p>
       </div>
 
-      <div class="container-fluid" id="part-7">
+      <div class="container-fluid" id="part-7" >
+      <div data-aos="fade-up">
         <h1>Title Here</h1>
         <br />
         <p>
@@ -273,6 +278,7 @@
           <input type="text" name="" placeholder="Your Email" />
           <button class="btn">SUBSCRIBE</button>
         </div>
+      </div>
       </div>
 
 
@@ -333,9 +339,19 @@
           </div> 
       </div>
     </div>      
-         
+   
       <!-- JavaScript Bundle with Popper -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init(
+          {
+            offset: 230,
+            duration: 1500
+          }
+        );
+      </script>
+       <script src="./script.js"></script>
     </div>
   </body>
 </html>
