@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 .rootElement {
-    /* width: 100vw;
-    height: 100vh; */
     overflow: hidden;
     overflow-y: auto;
     position: relative;
@@ -286,8 +284,6 @@ p{
     padding: 20px;
 }
 #part-5{
-    /* width:100%;
-    min-height: 500px; */
     color: white;
     background-image: url("./Images/background.jpg");
     background-repeat: no-repeat;
